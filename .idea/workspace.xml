@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44d8409b-8eb1-4343-888d-1857d6bf0180" name="Changes" comment="" />
+    <list default="true" id="44d8409b-8eb1-4343-888d-1857d6bf0180" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/General-Store.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EcommerceTC1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EcommerceTC1_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EcommerceTC3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EcommerceTC4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EcommerceTC5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EcommerceTC6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Basics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Base.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Basics.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Basics.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +31,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="22GeoZw4HPAgUCVH01OzJcbzAqf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -25,34 +43,52 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Java Sample\Project Testing\src" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Basics">
-    <configuration name="Base" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Base" />
+  <component name="RunManager" selected="Application.EcommerceTC6">
+    <configuration name="EcommerceTC1_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EcommerceTC1_1" />
       <module name="Project Testing" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Basics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Basics" />
+    <configuration name="EcommerceTC3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EcommerceTC3" />
       <module name="Project Testing" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="EcommerceTC4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EcommerceTC4" />
+      <module name="Project Testing" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EcommerceTC5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EcommerceTC5" />
+      <module name="Project Testing" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EcommerceTC6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EcommerceTC6" />
       <module name="Project Testing" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -60,9 +96,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Basics" />
-        <item itemvalue="Application.Base" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.EcommerceTC6" />
+        <item itemvalue="Application.EcommerceTC5" />
+        <item itemvalue="Application.EcommerceTC4" />
+        <item itemvalue="Application.EcommerceTC3" />
+        <item itemvalue="Application.EcommerceTC1_1" />
       </list>
     </recent_temporary>
   </component>
@@ -76,5 +114,17 @@
       <updated>1639468528357</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
