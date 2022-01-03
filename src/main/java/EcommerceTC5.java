@@ -1,9 +1,12 @@
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.touch.LongPressOptions;
 import io.appium.java_client.touch.TapOptions;
 import io.appium.java_client.touch.offset.ElementOption;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import io.appium.java_client.TouchAction;
 import org.testng.Assert;
@@ -47,6 +50,20 @@ public class EcommerceTC5 extends Base {
         Thread.sleep(3000);
 
         driver.findElement(By.id("com.androidsample.generalstore:id/btnProceed")).click();
+
+        Thread.sleep(7000);
+        Set<String> contexts = driver.getContextHandles();
+
+        for (String contextString : contexts){
+            System.out.println(contextString);
+        }
+        driver.context("WEBVIEW_com.androidsample.generalstore");
+        driver.findElement(By.name("q")).sendKeys("hello");
+        driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
+        driver.pressKey(new KeyEvent(AndroidKey.BACK));
+        driver.context("NATIVE_APP");
+
+        System.out.println("Test passed");
 
     }
 }

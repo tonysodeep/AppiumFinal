@@ -2,11 +2,12 @@ import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
 
-public class EcommerceTC1_1 extends  Base{
+public class EcommerceTC1Test extends Base{
     public static void main(String[] args) throws MalformedURLException {
 
 
@@ -29,8 +30,6 @@ public class EcommerceTC1_1 extends  Base{
         System.out.println(toastMessage);
 
         Assert.assertEquals("Please enter your name", toastMessage);//Actual validation
-
-        System.out.println();
 
     }
 }

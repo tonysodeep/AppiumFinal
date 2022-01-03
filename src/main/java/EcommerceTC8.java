@@ -11,8 +11,7 @@ import java.net.MalformedURLException;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
-
-public class EcommerceTC6 extends Base {
+public class EcommerceTC8 extends Base{
     public static void main(String[] args) throws MalformedURLException, InterruptedException {
 
         AndroidDriver driver = capabilities();
@@ -40,22 +39,16 @@ public class EcommerceTC6 extends Base {
 
         driver.findElements(By.xpath("//*[@text='ADD TO CART']")).get(0).click();
 
+        driver.findElements(By.xpath("//*[@text='ADDED TO CART']")).get(0).click();
+
+        driver.findElements(By.xpath("//*[@text='ADDED TO CART']")).get(0).click();
+
         driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();
 
-        Thread.sleep(3000);
+        String toastMessage=driver.findElement(By.xpath("//android.widget.Toast[1]")).getAttribute("name");
+        System.out.println(toastMessage);
 
-        TouchAction t=new TouchAction(driver);
-        WebElement tc=driver.findElement(By.xpath("//*[@text='Please read our terms of conditions']"));
-
-        t.longPress(LongPressOptions.longPressOptions().withElement(ElementOption.element(tc)).withDuration(Duration.ofSeconds(2))).release().perform();
-
-        String term = driver.findElement(By.id("com.androidsample.generalstore:id/alertTitle")).getText();
-
-        System.out.println(term);
-
-        Assert.assertEquals("Terms Of Conditions",term);
-
-        driver.findElement(By.id("android:id/button1")).click();
+        Assert.assertEquals("Please add some product at first", toastMessage);
 
         System.out.println("test passed");
 

@@ -11,8 +11,7 @@ import java.net.MalformedURLException;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
-
-public class EcommerceTC6 extends Base {
+public class EcommerceTC9 extends Base {
     public static void main(String[] args) throws MalformedURLException, InterruptedException {
 
         AndroidDriver driver = capabilities();
@@ -40,24 +39,12 @@ public class EcommerceTC6 extends Base {
 
         driver.findElements(By.xpath("//*[@text='ADD TO CART']")).get(0).click();
 
-        driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();
+        String total = driver.findElement(By.id("com.androidsample.generalstore:id/counterText")).getText();
 
-        Thread.sleep(3000);
+        System.out.println("total item in cart are " + total);
 
-        TouchAction t=new TouchAction(driver);
-        WebElement tc=driver.findElement(By.xpath("//*[@text='Please read our terms of conditions']"));
-
-        t.longPress(LongPressOptions.longPressOptions().withElement(ElementOption.element(tc)).withDuration(Duration.ofSeconds(2))).release().perform();
-
-        String term = driver.findElement(By.id("com.androidsample.generalstore:id/alertTitle")).getText();
-
-        System.out.println(term);
-
-        Assert.assertEquals("Terms Of Conditions",term);
-
-        driver.findElement(By.id("android:id/button1")).click();
-
-        System.out.println("test passed");
+        Assert.assertEquals("2", total);
+        System.out.println("Test passed");
 
     }
 }
